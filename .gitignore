@@ -1,0 +1,14 @@
+# Contact-form submissions (patient-supplied data, never commit)
+/storage/messages/
+/storage/*.log
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# XAMPP / local
+*.log
+*.bak
+*.tmp

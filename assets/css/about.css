@@ -1,0 +1,35 @@
+/* ==========================================================================
+   SEMC - about.css  (about.php only)
+   ========================================================================== */
+
+/* In-page sub navigation */
+.about-subnav { background: #fff; border-bottom: 1px solid var(--semc-gray); position: sticky; top: var(--nav-h); z-index: 1020; }
+.about-subnav ul { padding: .6rem 0; scrollbar-width: none; }
+.about-subnav ul::-webkit-scrollbar { display: none; }
+.subnav-link {
+    display: inline-block; white-space: nowrap; padding: .4rem 1rem; border-radius: 999px; font-size: .88rem; font-weight: 500;
+    color: var(--semc-navy); background: var(--semc-bg); transition: background-color .25s ease, color .25s ease;
+}
+.subnav-link:hover, .subnav-link.is-active { background: var(--semc-blue); color: #fff; }
+
+/* Mission / vision */
+.mv-card { padding: 2rem; }
+.mv-card p { color: var(--semc-muted); font-size: 1.02rem; }
+.text-muted-semc { color: var(--semc-muted); }
+
+/* Commitments */
+.commit-list { display: grid; gap: .9rem; }
+.commit-item {
+    display: flex; gap: .9rem; background: #fff; border-radius: var(--radius-sm); padding: 1rem 1.15rem;
+    border: 1px solid var(--semc-gray); box-shadow: var(--shadow-sm); transition: transform .25s ease, box-shadow .25s ease;
+}
+.commit-item:hover { transform: translateX(4px); box-shadow: var(--shadow); }
+.commit-item i { color: var(--semc-green); font-size: 1.25rem; margin-top: .1rem; }
+
+/* Gallery */
+.gallery-item { aspect-ratio: 4 / 3; background: var(--semc-gray); box-shadow: var(--shadow-sm); }
+.gallery-item img { height: 100%; object-fit: cover; }
+
+@media (min-width: 992px) {
+    .about-subnav { top: var(--nav-h); }
+}

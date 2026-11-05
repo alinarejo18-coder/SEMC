@@ -1,0 +1,63 @@
+/* ==========================================================================
+   SEMC - responsive.css
+   Shared responsive rules. Base styles are mobile-first; everything here
+   progressively enhances using min-width queries (plus small-phone fixes).
+   Breakpoints follow Bootstrap 5: 576 / 768 / 992 / 1200 / 1400.
+   ========================================================================== */
+
+/* ---------- Very small phones (< 360px) ---------- */
+@media (max-width: 359.98px) {
+    .brand-text small { display: none; }
+    .btn-semc { padding-left: 1rem; padding-right: 1rem; }
+    .nav-call { padding-left: .7rem; padding-right: .7rem; }
+}
+
+/* ---------- Mobile menu panel (< lg) ---------- */
+@media (max-width: 991.98px) {
+    .semc-navbar .navbar-collapse {
+        background: #fff; border-top: 1px solid var(--semc-gray); margin: .5rem -12px 0; padding: .5rem 12px 1rem;
+        max-height: calc(100vh - var(--nav-h) - 20px); overflow-y: auto;
+    }
+    .semc-navbar .nav-link { padding: .85rem .25rem; border-bottom: 1px solid var(--semc-bg); font-size: 1rem; }
+    .semc-navbar .nav-link::after { display: none; }
+    .semc-navbar .nav-link.active { color: var(--semc-blue); font-weight: 600; }
+    .cta-band .btn-semc { width: 100%; }
+    .cta-band .cta-actions { display: flex; flex-direction: column; gap: .75rem; }
+    .site-footer { text-align: left; }
+}
+
+/* ---------- >= 576px ---------- */
+@media (min-width: 576px) {
+    :root { --section-y: 4.5rem; }
+    .cta-band { padding: 3rem 2rem; }
+    .brand-text small { font-size: .7rem; }
+}
+
+/* ---------- >= 768px (tablets) ---------- */
+@media (min-width: 768px) {
+    :root { --section-y: 5rem; }
+    .section-head { margin-bottom: 3rem; }
+    .page-hero { padding: 4.25rem 0 3.75rem; }
+    .cta-band { padding: 3.5rem 3rem; }
+    .site-footer { padding-top: 4.5rem; }
+}
+
+/* ---------- >= 992px (laptops) ---------- */
+@media (min-width: 992px) {
+    :root { --nav-h: 80px; }
+    .semc-navbar .nav-link { padding: .8rem 1rem; }
+    .semc-navbar .nav-link::after { left: 1rem; right: 1rem; }
+    .page-hero { padding: 5rem 0 4.5rem; }
+}
+
+/* ---------- >= 1400px (large desktops) ---------- */
+@media (min-width: 1400px) {
+    .container { max-width: 1280px; }
+    :root { --section-y: 6rem; }
+}
+
+/* ---------- Print ---------- */
+@media print {
+    .topbar, .site-header, .back-to-top, .skip-link, .cta-band { display: none !important; }
+    body { color: #000; }
+}

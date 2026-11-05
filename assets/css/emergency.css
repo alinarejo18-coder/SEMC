@@ -1,0 +1,37 @@
+/* ==========================================================================
+   SEMC - emergency.css  (emergency.php only)
+   ========================================================================== */
+
+.emergency-hero { background: linear-gradient(135deg, var(--semc-navy) 0%, #1a4568 100%); color: #dbe7f1; padding: 2.5rem 0 3.5rem; }
+.emergency-hero h1 { color: #fff; margin: 1rem 0 .75rem; }
+.emergency-hero .lead { color: #c4d6e5; margin-bottom: 1.75rem; }
+.open-badge {
+    display: inline-flex; align-items: center; gap: .6rem; background: rgba(255, 255, 255, .1); border: 1px solid rgba(255, 255, 255, .25);
+    color: #fff; border-radius: 999px; padding: .4rem 1rem; font-size: .85rem; font-weight: 600;
+}
+
+/* Big click-to-call button */
+.call-big {
+    display: inline-flex; align-items: center; gap: 1rem; background: var(--semc-alert); color: #fff; border-radius: var(--radius);
+    padding: 1rem 1.5rem 1rem 1rem; box-shadow: 0 12px 30px rgba(211, 47, 63, .4); max-width: 100%;
+    transition: transform .25s ease, background-color .25s ease, box-shadow .25s ease;
+}
+.call-big:hover, .call-big:focus-visible { background: var(--semc-alert-dark); color: #fff; transform: translateY(-3px); box-shadow: 0 16px 36px rgba(211, 47, 63, .5); }
+.call-icon { width: 56px; height: 56px; flex: 0 0 56px; display: grid; place-items: center; border-radius: 50%; background: rgba(255, 255, 255, .18); font-size: 1.5rem; animation: semc-pulse 2.2s infinite; }
+.call-text { display: flex; flex-direction: column; line-height: 1.2; min-width: 0; }
+.call-text small { font-size: .8rem; opacity: .9; text-transform: uppercase; letter-spacing: .08em; }
+.call-text strong { font-family: var(--font-head); font-size: clamp(1.35rem, 5.5vw, 1.9rem); white-space: nowrap; }
+
+.warn-card { background: rgba(255, 255, 255, .08); border: 1px solid rgba(255, 255, 255, .2); border-left: 4px solid #ffb4bc; border-radius: var(--radius); padding: 1.4rem; color: #e5eef6; }
+.warn-card h2 { color: #fff; display: flex; gap: .5rem; align-items: center; }
+.warn-card i { color: #ffb4bc; }
+
+.text-muted-semc { color: var(--semc-muted); }
+.map-frame { height: 100%; min-height: 320px; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); border: 1px solid var(--semc-gray); }
+.map-frame iframe { width: 100%; height: 100%; min-height: 320px; border: 0; display: block; }
+.notice i { margin-right: .4rem; }
+
+[data-copy].is-copied { background: var(--semc-green); border-color: var(--semc-green); color: #fff; }
+
+@media (min-width: 768px) { .emergency-hero { padding: 3.5rem 0 4.5rem; } }
+@media (min-width: 992px) { .map-frame, .map-frame iframe { min-height: 400px; } }

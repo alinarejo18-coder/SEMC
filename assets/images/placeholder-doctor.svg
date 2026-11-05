@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Doctor photo placeholder">
+  <!-- PLACEHOLDER: no real doctor photograph has been supplied. -->
+  <rect width="400" height="400" fill="#E8EEF3"/>
+  <circle cx="200" cy="155" r="62" fill="#0878B9" opacity=".35"/>
+  <path d="M70 400c0-80 56-130 130-130s130 50 130 130z" fill="#0878B9" opacity=".35"/>
+  <path d="M170 292l30 40 30-40" fill="none" stroke="#19A88B" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" opacity=".8"/>
+</svg>

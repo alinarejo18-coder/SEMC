@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 560" role="img" aria-label="Healthcare illustration placeholder">
+  <!-- PLACEHOLDER hero art. Drop a real photo named hero.jpg into assets/images/ to replace it automatically. -->
+  <rect width="640" height="560" rx="32" fill="#F4F8FB"/>
+  <circle cx="320" cy="270" r="190" fill="#0878B9" opacity=".08"/>
+  <circle cx="320" cy="270" r="130" fill="#19A88B" opacity=".10"/>
+  <rect x="215" y="165" width="210" height="210" rx="44" fill="#0878B9"/>
+  <path d="M296 195h48v56h56v48h-56v56h-48v-56h-56v-48h56z" fill="#fff"/>
+  <path d="M60 470h150l30-62 46 96 36-72 30 38h228" fill="none" stroke="#19A88B" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="110" cy="110" r="10" fill="#19A88B" opacity=".5"/>
+  <circle cx="545" cy="150" r="14" fill="#0878B9" opacity=".35"/>
+  <circle cx="520" cy="420" r="8" fill="#19A88B" opacity=".5"/>
+</svg>

@@ -1,0 +1,24 @@
+/* ==========================================================================
+   SEMC - services.css  (services.php only)
+   ========================================================================== */
+
+.service-card { display: flex; flex-direction: column; }
+.service-card p { color: var(--semc-muted); }
+
+.service-toggle {
+    margin-top: auto; align-self: flex-start; background: none; border: 0; padding: .5rem 0; min-height: 44px;
+    color: var(--semc-blue); font-weight: 600; font-size: .92rem; display: inline-flex; align-items: center; gap: .4rem; cursor: pointer;
+}
+.service-toggle:hover { color: var(--semc-blue-dark); }
+.service-toggle i { transition: transform .3s ease; }
+.service-toggle[aria-expanded="true"] i { transform: rotate(180deg); }
+
+.service-detail {
+    background: var(--semc-bg); border-radius: var(--radius-sm); padding: .9rem 1rem; font-size: .92rem; margin-top: .25rem;
+}
+.service-detail[hidden] { display: none; }
+.service-detail p { margin: 0; color: var(--semc-text); }
+.service-detail.is-open { animation: semc-fade-in .3s ease both; }
+
+.notice i { margin-right: .4rem; }
+.cta-band.text-start { text-align: left !important; padding: 2rem; }

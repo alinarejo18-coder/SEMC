@@ -1,0 +1,26 @@
+/* ==========================================================================
+   SEMC - doctors.css  (doctors.php only)
+   ========================================================================== */
+
+.doctor-card { text-align: center; }
+.doctor-photo { width: 150px; height: 150px; margin: 0 auto 1.25rem; border-radius: 50%; overflow: hidden; border: 4px solid var(--semc-gray); background: var(--semc-gray); }
+.doctor-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.doctor-role { color: var(--semc-green-dark); font-weight: 600; font-size: .92rem; margin-bottom: 1rem; }
+
+.doctor-meta { text-align: left; margin: 0; border-top: 1px solid var(--semc-gray); padding-top: 1rem; }
+.doctor-meta dt { font-size: .75rem; text-transform: uppercase; letter-spacing: .08em; color: var(--semc-muted); font-weight: 600; }
+.doctor-meta dd { margin: 0 0 .8rem; color: var(--semc-navy); }
+.doctor-meta dd:last-child { margin-bottom: 0; }
+
+.doctor-card-placeholder { border-style: dashed; border-color: #c7d4df; background: #fbfdfe; }
+.doctor-card-placeholder .doctor-meta dd { color: var(--semc-muted); font-style: italic; }
+.doctor-card-placeholder:hover { transform: none; box-shadow: var(--shadow-sm); border-color: #c7d4df; }
+
+/* Filters (only rendered when real profiles with 2+ specialisations exist) */
+.doctor-filters { display: flex; flex-wrap: wrap; gap: .5rem; justify-content: center; margin-bottom: 2rem; }
+.filter-btn {
+    background: var(--semc-bg); border: 1px solid var(--semc-gray); color: var(--semc-navy); border-radius: 999px;
+    padding: .5rem 1.1rem; min-height: 44px; font-weight: 500; cursor: pointer; transition: background-color .25s ease, color .25s ease;
+}
+.filter-btn:hover, .filter-btn.is-active { background: var(--semc-blue); color: #fff; border-color: var(--semc-blue); }
+.doctor-col[hidden] { display: none; }
